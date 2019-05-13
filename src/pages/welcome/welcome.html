@@ -7,7 +7,7 @@
 
 <ion-content padding>
     <ion-grid class="main-grid">
-      <ion-row class="ion-margin-top-50">
+      <ion-row>
         <ion-col col-12 class="logo-col"> <img src="assets/imgs/logo.webp" width="250"> </ion-col>
         <ion-col col-12 class="full-col">
           <h4>Let's Start With Your Cell Number</h4>
@@ -18,15 +18,15 @@
           </ion-item>
         </ion-col>
         <ion-col col-12 class="full-col">
-          <button ion-button color="theme" class="send-btn">Send Code</button>
+          <button ion-button color="theme" class="send-btn" (click)="registerPage()">Send Code</button>
         </ion-col>
         
-        <ion-col col-12 class="footer">
+        <!-- <ion-col col-12 >
             <p>Already have account?</p>
           <button ion-button color="theme-danger" (click)="loginPage()" round full>Login</button>
-        </ion-col>
-        <ion-col col-12>
-          <button ion-button color="theme-dark" (click)="registerPage()" round full>Register</button>
+        </ion-col> -->
+        <ion-col col-12 class="footer">
+          <button ion-button color="theme-dark" (click)="loginPage()" round full>Login Here</button>
         </ion-col>
       </ion-row>
     </ion-grid>

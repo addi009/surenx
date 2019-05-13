@@ -6,16 +6,26 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>login</ion-title>
+    <ion-title>Login Here</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <ion-grid>
-      <ion-row class="ion-margin-top-50">
-        <ion-col col-12>
-            <button ion-button color="secondary" (click)="homePage()">Login</button>
-        </ion-col>
+    <ion-grid class="main-grid">
+      <ion-row>
+          <ion-col col-12 class="logo-col"> <img src="assets/imgs/logo.webp" width="250"> </ion-col>
+        
+        <ion-col col-12 class="full-col">
+            <h4>Please Enter Your Code Here</h4>
+          </ion-col>
+          <ion-col col-12 class="full-col">
+            <ion-item>
+              <ion-input type="text" placeholder="Enter Code"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-12 class="full-col">
+            <button ion-button color="theme-danger" class="login-btn" full round (click)="homePage()">Login</button>
+          </ion-col>
       </ion-row>
     </ion-grid>
 </ion-content>

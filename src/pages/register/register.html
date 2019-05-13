@@ -4,12 +4,52 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+
 <ion-header>
-  <ion-navbar>
-    <ion-title>register</ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar>
+      <ion-title>Register Here</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+    <ion-grid class="main-grid-register">
+      <ion-row>
+        <ion-col col-12><img src="assets/imgs/logo.webp" width="150"></ion-col>
+        <ion-col col-12>
+          <ion-item>
+            <ion-label color="theme" floating>First Name</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label color="theme" floating>Last Name</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item style="margin-top:3%">
+            <ion-label color="theme">Year of birth</ion-label>
+            <ion-datetime displayFormat="MMMM DDDD YYYY" min="2016" max="2020-10-31" [(ngModel)]="myDate"> </ion-datetime>
+          </ion-item>
+          <ion-item>
+            <ion-label color="theme">Gender</ion-label>
+            <ion-select placeholder="" color="theme">
+              <ion-option value="f">Female</ion-option>
+              <ion-option value="m">Male</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label color="theme" floating>Address</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          
+              <ion-item>
+                  <ion-label color="theme" floating>Did anyone referred you? Enter their code here</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label color="theme" floating>Your referral code here</ion-label>
+                <ion-input value="3426j9"></ion-input>
+              </ion-item>
 
-<ion-content padding>
-
-</ion-content>
+              <button ion-button color="theme-danger" class="create-account-btn" full round >Create My Account</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>  

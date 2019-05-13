@@ -14,6 +14,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { DetailMarketPage } from '../pages/detail-market/detail-market';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,7 +32,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     WelcomePage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    DetailMarketPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ContactPage,
     WelcomePage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    DetailMarketPage
   ],
   providers: [
     StatusBar,

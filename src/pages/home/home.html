@@ -1,18 +1,71 @@
 <ion-header>
-  <ion-navbar>
+  <!-- <ion-navbar>
     <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
+    <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
-  </ion-navbar>
+  </ion-navbar> -->
+  <button ion-button menuToggle color="theme-dark">
+      <ion-icon name="menu"></ion-icon>
+      </button>
 </ion-header>
-
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-grid>
+    <ion-row class="top-row row">
+      <ion-col col-12>
+        <p><span class="top-row-large">Welcome back, Joe</span></p>
+        <p><span class="top-row-large"><b>Network Summary</b></span></p>
+        <p><span class="top-row-large"><b>$70.</b></span><span>00</span>&nbsp;<span class="top-row-regular">Potential Earning</span></p>
+        <p><span class="top-row-large"><b>$25.</b></span><span>00</span>&nbsp;<span class="top-row-regular">Current Earning</span></p>
+        <p><span class="top-row-large"><b>32</b></span>&nbsp;Referrals Joined</p>
+      </ion-col>
+      <ion-col col-12>
+        <button ion-button color="theme" class="redeem-btn">REDEEM</button>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="row">
+      <ion-col col-12>
+        <h1 color="theme-dark"><b>The Market</b></h1>
+        <p><b style="color:#f2bb07">Buy now or get rewarded for referrals</b></p>
+      </ion-col>
+      <ion-col col-12>
+        <ion-slides >
+          <ion-slide *ngFor="let market of markets" class="ion-slide-one-home" (click)="detailMarket(market.id)"> <img src="{{market.image}}">
+            <h5 class="ion-slide-h5-one theme-dark">{{market.title}}</h5>
+            <p class="ion-slide-p-one">{{market.description}}</p>
+            <ion-row>
+              <ion-col col-6>
+                <button ion-button color="theme" full>QUOTE</button>
+              </ion-col>
+              <ion-col col-6>
+                <button ion-button color="theme-dark" full>REFER</button>
+              </ion-col>
+            </ion-row>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row">
+        <ion-col col-12>
+            <h1 color="theme-dark"><b>The Community</b></h1>
+            <p><b style="color:#f2bb07">Our common grounds</b></p>
+          </ion-col>
+      <ion-col col-12>
+        <ion-slides>
+          <ion-slide *ngFor="let community of communities" class="ion-slide-two-home">
+            <ion-row>
+              <ion-col col-4><img src="{{community.image}}"></ion-col>
+              <ion-col col-8>
+                <h4 class="ion-slide-h4-two">{{community.title}}</h4>
+                <p class="ion-slide-p-two">{{community.description}}</p>
+                <button ion-button color="theme" class="invite-btn">INVITE</button>
+              </ion-col>
+            </ion-row>
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+  </ion-grid>
 </ion-content>

@@ -12,7 +12,8 @@ import { MessagesPage } from '../pages/messages/messages';
 import { FaqsPage } from '../pages/faqs/faqs';
 import { ContactPage } from '../pages/contact/contact';
 import { WelcomePage } from '../pages/welcome/welcome';
-import { LoginPage } from '../pages/login/login';
+import { DetailMarketPage } from '../pages/detail-market/detail-market';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +21,7 @@ import { LoginPage } from '../pages/login/login';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = WelcomePage;
+  rootPage: any = DetailMarketPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -56,7 +57,7 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 
-  logout(){
-    this.nav.setRoot(LoginPage);
+  welcomePage(){
+    this.nav.setRoot(WelcomePage);
   }
 }
