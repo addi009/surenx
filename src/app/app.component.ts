@@ -13,6 +13,7 @@ import { FaqsPage } from '../pages/faqs/faqs';
 import { ContactPage } from '../pages/contact/contact';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { DetailMarketPage } from '../pages/detail-market/detail-market';
+import { DetailCommunityPage } from '../pages/detail-community/detail-community';
 
 
 @Component({
@@ -21,7 +22,7 @@ import { DetailMarketPage } from '../pages/detail-market/detail-market';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = DetailMarketPage;
+  rootPage: any = DetailCommunityPage;
 
   pages: Array<{title: string, component: any}>;
 

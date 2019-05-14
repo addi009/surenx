@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
+import { ErrorHandler, NgModule  } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
@@ -15,6 +15,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { DetailMarketPage } from '../pages/detail-market/detail-market';
+import { DetailCommunityPage } from '../pages/detail-community/detail-community';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -33,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     WelcomePage,
     LoginPage,
     RegisterPage,
-    DetailMarketPage
+    DetailMarketPage,
+    DetailCommunityPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     WelcomePage,
     LoginPage,
     RegisterPage,
-    DetailMarketPage
+    DetailMarketPage,
+    DetailCommunityPage
   ],
   providers: [
     StatusBar,
