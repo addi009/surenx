@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 
 /**
  * Generated class for the DetailMarketPage page.
@@ -15,7 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetailMarketPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  details: string = "details";
+  isAndroid: boolean = false;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, platform: Platform) {
+    this.isAndroid = platform.is('android');
   }
 
   ionViewDidLoad() {

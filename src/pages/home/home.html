@@ -59,7 +59,7 @@
               <ion-col col-8>
                 <h4 class="ion-slide-h4-two">{{community.title}}</h4>
                 <p class="ion-slide-p-two">{{community.description}}</p>
-                <button ion-button color="theme" class="invite-btn">INVITE</button>
+                <button ion-button color="theme" class="invite-btn" (click)="detailCommunity(community.id)">INVITE</button>
               </ion-col>
             </ion-row>
           </ion-slide>

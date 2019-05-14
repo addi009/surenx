@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import { DetailMarketPage } from '../detail-market/detail-market';
-
+import { DetailCommunityPage } from '../detail-community/detail-community';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -75,4 +75,7 @@ export class HomePage {
     this.navCtrl.setRoot(DetailMarketPage);
   }
 
+  detailCommunity(id){
+    this.navCtrl.setRoot(DetailCommunityPage);
+  }
 }
