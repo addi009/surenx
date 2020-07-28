@@ -1,6 +1,14 @@
-page-detail-market {
-    .page-tabs-btn{width: 50%;}
-    .detail-page-btn{background-color: red;}
-    .toolbar-background-ios, .toolbar-background-md{background-color: transparent !important;}
-    .ion-list-btn-area{margin-bottom: 0px !important}
+ion-app.ios [padding] .scroll-content{padding:unset !important;}
+ion-app.md [padding] .scroll-content{padding:unset !important;}
+.close-btn{margin-right: 15px;margin-top: 15px;}
+.main-image{position: relative;}
+.image-row-data{position: absolute;top:0;width:100%;}
+.image-row-data-left-col{margin-top:5%;}
+.invite-friend-detail-btn{
+    width: 40%;
+    position: absolute;
+    right: 20px;
+    top: 180px;
+    border-radius: 10px;
+    text-transform: unset;
 }

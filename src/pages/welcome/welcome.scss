@@ -1,7 +1,34 @@
-.main-grid{
-    padding:25% 5% 0 5%;
-    text-align: center;
+.background-image {
+    background: url('../../assets/imgs/quick-start/splash.png') no-repeat center center fixed;
+    background-size: cover;
 }
-
-.send-btn{float: right !important;}
-.footer{margin-top: 25%;}
+.section-one-row{margin: 12% 0 42% 0;}
+.quick-start-btn{
+    font-weight: bold;
+    width: 35%;
+    font-family: Montserrat Medium;
+    text-transform: unset;
+    border-radius: 5px;
+    border-color:rgb(78, 78, 78);
+}
+.quick-start-btn > .button-inner{color:#58abff}
+.quick-start-btn-image{position: absolute;top:-25%;z-index: 1;}
+.new-users-btn{
+    font-weight: bold;
+    width: 50%;
+    font-family: Montserrat Medium;
+    text-transform: unset;
+    border-radius: 5px;
+}
+.new-users-btn > .button-inner{color:#ffffff}
+.returning-users-btn{
+    font-weight: bold;
+    width: 65%;
+    font-family: Montserrat Medium;
+    text-transform: unset;
+    border-radius: 5px;
+}
+.returning-users-btn > .button-inner{color:#ffffff}
+.top-text > h4, .top-text > h6{margin: unset}
+.buttons-row{text-align: right;}
+.buttons-row > ion-col{padding:unset;}

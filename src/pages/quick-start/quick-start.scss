@@ -1,0 +1,61 @@
+ion-content{
+    background: url("../../assets/imgs/quick-start/splash.png")
+}
+.refer-btn{
+    color:white;
+    font-weight: bold;
+    width: 40%;
+    font-family: Montserrat Medium;
+    text-transform: unset;
+}
+.button-inner{color:white;}
+.main-grid-quick-start{margin-top:5%;}
+ion-header{
+    text-align: center;
+    padding: 4%;
+}
+ion-header > img{float: unset;}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+    background-image:unset;
+}
+
+.header-ios::after, .tabs-ios[tabsPlacement="top"] > .tabbar::after, .footer-ios::before, .tabs-ios[tabsPlacement="bottom"] > .tabbar::before{
+    background-image:unset;
+}
+ion-slides{
+    height:500px;
+}
+
+.ion-slides-row{
+    border:1px solid lightgray;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: white;
+}
+
+.swiper-slide{
+    -webkit-align-items: unset;
+
+}
+#potential-earnings{
+    text-align: left;
+    padding: 1% 4%;
+    margin: 0% 8%;
+    border-radius: 15px;
+    background: rgba(88,172,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(88,172,255,1) 0%, rgba(96,155,218,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(88,172,255,1)), color-stop(100%, rgba(96,155,218,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(88,172,255,1) 0%, rgba(96,155,218,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(88,172,255,1) 0%, rgba(96,155,218,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(88,172,255,1) 0%, rgba(96,155,218,1) 100%);
+    background: linear-gradient(135deg, rgba(88,172,255,1) 0%, rgba(96,155,218,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58acff', endColorstr='#609bda', GradientType=1 );
+}
+#potential-earnings > p{
+    color:white;
+}
+#potential-earnings > p > span{
+    font-size: 50px;
+    color:white;
+    font-weight: bold;
+}

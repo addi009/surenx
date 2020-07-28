@@ -1,0 +1,38 @@
+page-notifications {
+    ion-header{
+        background-color: #eeeeee;
+    }
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+        height: unset;
+    }
+    .fixed-content{
+        background-color: #eeeeee;
+    }
+    .scroll-content{
+        padding: 0px 16px 16px 16px !important;
+    }
+    .top-row-regular-p{
+        font-size: 20px;
+    }
+    .top-row-large{
+        font-size: 22px;
+    }
+    .top-row > ion-col > p{
+        margin: 2px;
+    }
+    .invite-btn{float: right;}
+    .redeem-btn{float: right;padding: 1% 15%}
+
+    .toggle-button-top{float:left;background-color: unset;box-shadow: unset;}
+    .toggle-button-icon{color:#444444;font-size: 35px;}
+    .top-text{font-size: 18px;top:10px;}
+    .padding-top-0{padding-top:0px;}
+    .theme-blue-color{color:#58abff}
+    .ion-silde-one-button{width:100%;text-transform: unset;}
+    .light-grey-color{color:#b2b2b2}
+    .community-text-area{position: absolute;top:10px;left:10px;text-align: left}
+    .invite-friends-btn{width:80%;text-transform: unset;}
+    .ion-notification-thumbail{min-width: 10px;padding: 8% 0 !important;}
+}
+
+

@@ -1,7 +1,15 @@
 .main-grid-register{
     padding:2% 5% 0 5%;
     text-align: center;
+    margin-top:10%;
 }
-
+.close-icon{float: left;}
 ion-label{font-size: 14px;}
 .create-account-btn{margin-top: 10%;}
+.main-grid-register > .ionic-stepper > .ionic-stepper-vertical-container > ion-step-header{display:none !important;border:unset;}
+.main-grid-register > ion-stepper .ionic-stepper-vertical-content-container{margin-left: unset;}
+.main-grid-register > ion-stepper .ionic-vertical-content{min-height: 500px;border:0px;}
+.continue-btn{margin-top:15%;text-transform: unset;width: 70%;padding:7% 0;font-size:16px;}
+.input-title{padding:5% 0}
+.previous-icon{position: absolute;left: 0;font-size: 18px;font-weight: bold;}
+.main-grid-register > ion-stepper .ionic-stepper-vertical-line::before{border:unset}

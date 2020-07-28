@@ -4,16 +4,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { SettingsPage } from '../pages/settings/settings';
-import { MyEarningsPage } from '../pages/my-earnings/my-earnings';
-import { ReferralsPage } from '../pages/referrals/referrals';
-import { MessagesPage } from '../pages/messages/messages';
 import { FaqsPage } from '../pages/faqs/faqs';
 import { ContactPage } from '../pages/contact/contact';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { DetailMarketPage } from '../pages/detail-market/detail-market';
 import { DetailCommunityPage } from '../pages/detail-community/detail-community';
+import { NotificationsPage } from '../pages/notifications/notifications';
+import { HowItWorksPage } from '../pages/how-it-works/how-it-works';
+import { ActiveLifestylePage } from '../pages/active-lifestyle/active-lifestyle';
+import { RoadSafetyPage } from '../pages/road-safety/road-safety';
+import { SavingPlanetPage } from '../pages/saving-planet/saving-planet';
 
 
 @Component({
@@ -22,7 +23,7 @@ import { DetailCommunityPage } from '../pages/detail-community/detail-community'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = DetailCommunityPage;
+  rootPage: any = NotificationsPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -31,14 +32,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
-      { title: 'Settings', component: SettingsPage },
-      { title: 'My Earnings', component: MyEarningsPage },
-      { title: 'Referrals', component: ReferralsPage },
-      { title: 'Messages', component: MessagesPage },
+      { title: 'Notifications', component: NotificationsPage },
+      { title: 'How it works?', component: HowItWorksPage },
+      { title: 'Active Lifestyle +', component: ActiveLifestylePage },
+      { title: 'Road Safety +', component: RoadSafetyPage },
+      { title: 'Saving Planet +', component: SavingPlanetPage },
       { title: 'FAQs', component: FaqsPage },
-      { title: 'Contact Surenx', component: ContactPage }
+      { title: 'Contact', component: ContactPage },
+      { title: 'Settings', component: SettingsPage }
     ];
 
   }
@@ -61,4 +62,10 @@ export class MyApp {
   welcomePage(){
     this.nav.setRoot(WelcomePage);
   }
+
+  homePage(){
+    this.nav.setRoot(HomePage);
+  }
+
+  
 }

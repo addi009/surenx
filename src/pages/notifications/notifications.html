@@ -1,0 +1,25 @@
+<ion-header style="padding-bottom:0px;">
+  <button ion-button menuToggle color="theme-dark" class="toggle-button-top">
+  <ion-icon name="menu" class="toggle-button-icon"></ion-icon>
+  </button>
+  <span class="top-text"><strong>Notifications</strong></span> </ion-header>
+<ion-content padding>
+  <ion-grid class="padding-top-0">
+    <ion-row class="padding-top-0">
+      <ion-col col-12>
+        <ion-list>
+          <ion-item (click)="doAlert()">
+            <ion-thumbnail item-start class="ion-notification-thumbail">
+              <input type="radio">
+                <!-- <ion-radio checked="true" value="go"></ion-radio> -->
+            </ion-thumbnail>
+            <h2><strong>Product Alert!</strong></h2>
+                <p>Surnex now offers Life Insurance.</p>
+                <button ion-button item-end color="light"><ion-icon ios="ios-more" md="md-more" style="color:black;"></ion-icon></button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> --> 
+  </ion-grid>
+</ion-content>

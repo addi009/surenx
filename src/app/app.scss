@@ -53,9 +53,29 @@
     font-family: Oswald;
     src:url('../assets/fonts/Oswald/Oswald-Regular.ttf');
 }
+
+@font-face {
+    font-family: Montserrat Black;
+    src:url('../assets/fonts/Montserrat/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: Montserrat Light;
+    src:url('../assets/fonts/Montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+    font-family: Montserrat Medium;
+    src:url('../assets/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: Montserrat Regular;
+    src:url('../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
   
-p,ion-item,h1,h2,h3,h4,h5,h6,ion-title,ion-label,ion-title,b,button{
-    font-family: Raleway Regular;
+p,ion-item,h1,h2,h3,h4,h5,h6,ion-title,ion-label,ion-title,b,button,span{
+    font-family: Montserrat Regular;
     color:#545454;
 }
 
@@ -73,3 +93,8 @@ p,ion-item,h1,h2,h3,h4,h5,h6,ion-title,ion-label,ion-title,b,button{
 .full-col{
     margin: 2% 0;
 }
+
+.menu-inner{width: 195px;}
+.label-md{margin: 8px 8px 8px 0;}
+.logout-sidebar{margin-top:10%;}
+.close-btn{float: right;}

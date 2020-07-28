@@ -8,12 +8,12 @@
   <ion-content>
     <ion-list class="sidebar">
       <ion-item class="sidebar-menu-item">
-        <img src="assets/imgs/logo.webp" width=100>
+        <img src="assets/imgs/surenx-logo/logo.png" width=100 (click)="homePage()"> <img src="assets/imgs/Close Icon.png" width="30" class="close-btn" menuToggle>
       </ion-item>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="sidebar-menu-list">
         {{p.title}}
       </button>
-      <button menuClose ion-item (click)="welcomePage()" class="sidebar-menu-list">
+      <button menuClose ion-item (click)="welcomePage()" class="sidebar-menu-list logout-sidebar">
           Log Out
         </button>
     </ion-list>

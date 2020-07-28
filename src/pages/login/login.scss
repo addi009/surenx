@@ -1,6 +1,33 @@
 .main-grid{
-    padding:25% 5% 0 5%;
+    padding:10% 5% 0 5%;
+    text-align: center;
+}
+.login-input input::-moz-placeholder {
     text-align: center;
 }
 
-.login-btn{text-transform: uppercase;}
+.login-input input::-ms-input-placeholder {
+    text-align: center;
+}
+
+.login-input input::-webkit-input-placeholder {
+    text-indent: 0;
+    text-align: center;
+}
+.login-btn{
+    color:white;
+    font-weight: bold;
+    width: 40%;
+    font-family: Montserrat Medium;
+    text-transform: unset;
+}
+
+ion-header{text-align: right;}
+ion-header > img{float: right;}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+    background-image:unset;
+}
+
+.header-ios::after, .tabs-ios[tabsPlacement="top"] > .tabbar::after, .footer-ios::before, .tabs-ios[tabsPlacement="bottom"] > .tabbar::before{
+    background-image:unset;
+}

@@ -5,51 +5,98 @@
   Ionic pages and navigation.
 -->
 
-<ion-header>
+<!-- <ion-header>
     <ion-navbar>
       <ion-title>Register Here</ion-title>
     </ion-navbar>
-  </ion-header>
-  <ion-content padding>
-    <ion-grid class="main-grid-register">
-      <ion-row>
-        <ion-col col-12><img src="assets/imgs/logo.webp" width="150"></ion-col>
-        <ion-col col-12>
-          <ion-item>
-            <ion-label color="theme" floating>First Name</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-label color="theme" floating>Last Name</ion-label>
-            <ion-input></ion-input>
-          </ion-item>
-          <ion-item style="margin-top:3%">
-            <ion-label color="theme">Year of birth</ion-label>
-            <ion-datetime displayFormat="MMMM DDDD YYYY" min="2016" max="2020-10-31" [(ngModel)]="myDate"> </ion-datetime>
-          </ion-item>
-          <ion-item>
-            <ion-label color="theme">Gender</ion-label>
-            <ion-select placeholder="" color="theme">
-              <ion-option value="f">Female</ion-option>
-              <ion-option value="m">Male</ion-option>
-            </ion-select>
-          </ion-item>
-          <ion-item>
-              <ion-label color="theme" floating>Address</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          
-              <ion-item>
-                  <ion-label color="theme" floating>Did anyone referred you? Enter their code here</ion-label>
-                <ion-input></ion-input>
-              </ion-item>
-              <ion-item>
-                  <ion-label color="theme" floating>Your referral code here</ion-label>
-                <ion-input value="3426j9"></ion-input>
-              </ion-item>
+  </ion-header> -->
 
-              <button ion-button color="theme-danger" class="create-account-btn" full round (click)="homePage()" >Create My Account</button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>  
+  <ion-content padding>
+      <ion-grid class="main-grid-register">
+        <ion-row>
+          <ion-col col-12>
+              <img src="assets/imgs/Close Icon.png" width="20" class="close-icon" *ngIf="hideCloseIcon" (click)="welcomePage()">
+            <img src="assets/imgs/surenx-logo/logo.png" width="150"> </ion-col>
+        </ion-row>
+        <ion-stepper #stepper (selectIndexChange)="selectChange($event)">
+          <!-- Step 1 -->
+          <ion-step label="" description="">
+            <h4 class="input-title">Email</h4>
+            <ion-item>
+              <ion-input type="email" placeholder="Enter your email address"></ion-input>
+            </ion-item>
+            <button ion-button small ionicStepperNext color="theme" class="continue-btn">Continue</button>
+          </ion-step>
+          <!-- Step 2 -->
+          <ion-step label="" description="">
+            <ion-icon name="arrow-back" ios="ios-arrow-back" md="md-arrow-back" ionicStepperPrevious class="previous-icon"></ion-icon>
+            <h4 class="input-title">Let's Get Started</h4>
+            <ion-item>
+              <ion-input type="text" placeholder="Enter your cell number"></ion-input>
+            </ion-item>
+            <button ion-button small ionicStepperNext color="theme" class="continue-btn">Send Code</button>
+            <p>Charges may apply</p>
+          </ion-step>
+          <!-- Step 3 -->
+          <ion-step label="" description="">
+            <ion-icon name="arrow-back" ios="ios-arrow-back" md="md-arrow-back" ionicStepperPrevious class="previous-icon"></ion-icon>
+            <h4 class="input-title">Legal Name</h4>
+            <ion-item>
+              <ion-input type="text" placeholder="First Name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" placeholder="Last Name"></ion-input>
+              </ion-item>
+            <button ion-button small ionicStepperNext color="theme" class="continue-btn">Continue</button>
+          </ion-step>
+          <!-- Step 4 -->
+          <ion-step label="" description="">
+            <ion-icon name="arrow-back" ios="ios-arrow-back" md="md-arrow-back" ionicStepperPrevious class="previous-icon"></ion-icon>
+            <h4 class="input-title">Address</h4>
+            <ion-item>
+              <ion-input type="text" placeholder="Postal Code"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" placeholder="City"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-input type="text" placeholder="Country"></ion-input>
+                </ion-item>
+            <button ion-button small ionicStepperNext color="theme" class="continue-btn">Continue</button>
+          </ion-step>
+          <!-- Step 5 -->
+          <ion-step label="" description="">
+            <ion-icon name="arrow-back" ios="ios-arrow-back" md="md-arrow-back" ionicStepperPrevious class="previous-icon"></ion-icon>
+            <h4 class="input-title">Year of Birth</h4>
+            <ion-item>
+              <ion-input type="text" placeholder="XX/XX/XXXX"></ion-input>
+            </ion-item>
+            <button ion-button small ionicStepperNext color="theme" class="continue-btn">Continue</button>
+          </ion-step>
+          <!-- Step 6 -->
+          <ion-step label="" description="">
+            <ion-icon name="arrow-back" ios="ios-arrow-back" md="md-arrow-back" ionicStepperPrevious class="previous-icon"></ion-icon>
+            <h4 class="input-title">Password</h4>
+            <ion-item>
+              <ion-input type="text" placeholder="Create Password"></ion-input>
+            </ion-item>
+            <button ion-button small ionicStepperNext color="theme" class="continue-btn">Continue</button>
+          </ion-step>
+          <!-- Step 7 -->
+          <ion-step label="" description="">
+            <ion-icon name="arrow-back" ios="ios-arrow-back" md="md-arrow-back" ionicStepperPrevious class="previous-icon"></ion-icon>
+            <h4 class="input-title">Now enter your referral code</h4>
+            <ion-item>
+              <ion-input type="text" placeholder="A1111"></ion-input>
+            </ion-item>
+            <button ion-button small ionicStepperNext color="theme" class="continue-btn">Submit</button>
+            <p>Check your invitation message for referral code. You must enter referral code to start earning. You can add the code later from Settings</p>
+            <button ion-button small color="primary" class="continue-btn">Skip For Now</button>
+          </ion-step>
+        </ion-stepper>
+        <ion-footer class="ion-footer">
+          <p> Already Signed? <a href="javascript:;" class="login-a" (click)="loginPage()">Login</a></p>
+        </ion-footer>
+      </ion-grid>
+    </ion-content>
+    

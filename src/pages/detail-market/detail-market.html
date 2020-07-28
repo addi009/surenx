@@ -1,102 +1,20 @@
-<!--
-  Generated template for the DetailMarketPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-  <!-- <ion-navbar>
-      <ion-title>detailMarket</ion-title>
-    </ion-navbar> -->
+<ion-content padding> 
+  <img src="../../assets/imgs/auto insursnce form.png" class="main-image">
+  <ion-grid>
+    <ion-row class="image-row-data">
+      <ion-col col-12 align="right">
+          <img src="../../assets/imgs/Close Icon.png" width="30" (click)="goToHomePage()" class="close-btn">
+          
+      </ion-col>
+      <ion-col col-12><button ion-button color="theme" class="invite-friend-detail-btn">Invite Friends</button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <h1><strong>Auto & Home Insurance</strong></h1>
+        <p>Surenx is bringing you a product that’s worth falling in love with. We are working with select insurance companies to create a product that offers great coverage and price exclusively for Surenx members.</p>
+        <p>While we are on it, tell us about yourself and we will get back to you very soon.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
   
-  <button ion-button menuToggle color="theme-dark">
-  <ion-icon name="menu"></ion-icon>
-  </button>
-  </ion-header>
-  <ion-content padding> <img src="https://picsum.photos/id/230/1980/760">
-    <ion-grid>
-      <ion-row>
-        <ion-col col-12>
-          <ion-list class="ion-list-btn-area">
-            <ion-item>
-              <ion-row>
-                <ion-col col-6>
-                  <h4>Life Insurance</h4>
-                </ion-col>
-                <ion-col col-6 align="right">
-                  <button ion-button color="theme-danger" small full>Quote</button>
-                </ion-col>
-              </ion-row>
-            </ion-item>
-            <ion-item>
-              <ion-row>
-                <ion-col col-6>
-                  <h4>Marketing Message</h4>
-                </ion-col>
-                <ion-col col-6 align="right">
-                  <button ion-button color="theme-dark" small full>Refer</button>
-                </ion-col>
-              </ion-row>
-            </ion-item>
-          </ion-list>
-        </ion-col>
-        <ion-col col-12>
-          <ion-toolbar no-border-top>
-            <ion-segment [(ngModel)]="details" color="theme">
-              <ion-segment-button value="details"> Details </ion-segment-button>
-              <ion-segment-button value="sponsors"> Sponsors </ion-segment-button>
-            </ion-segment>
-          </ion-toolbar>
-          <div [ngSwitch]="details">
-            <ion-list *ngSwitchCase="'details'">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <h2><b>Our Partners</b></h2>
-              <ion-item>
-                <p>Partner One</p>
-              </ion-item>
-              <ion-item>
-                <p>Partner Two</p>
-              </ion-item>
-              <ion-item>
-                <p>Partner Three</p>
-              </ion-item>
-              <h2><b>Why Buy Life Insurance</b></h2>
-              <ion-item>
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
-              </ion-item>
-              <ion-item>
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
-              </ion-item>
-              <ion-item>
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
-              </ion-item>
-              <ion-item>
-                <p>Lorem Ipsum is simply dummy text of the printing</p>
-              </ion-item>
-            </ion-list>
-            <ion-list *ngSwitchCase="'sponsors'">
-              <h2>Details</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <h2>Sponsors</h2>
-              <ion-item>
-                <ion-thumbnail item-start> <img src="https://picsum.photos/id/251/300/300"> </ion-thumbnail>
-                <p>Luna</p>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail item-start> <img src="https://picsum.photos/id/252/300/300"> </ion-thumbnail>
-                <p>Milo</p>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail item-start> <img src="https://picsum.photos/id/253/300/300"> </ion-thumbnail>
-                <p>Bandit</p>
-              </ion-item>
-              <ion-item>
-                <ion-thumbnail item-start> <img src="https://picsum.photos/id/254/300/300"> </ion-thumbnail>
-                <p>Nala</p>
-              </ion-item>
-            </ion-list>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>

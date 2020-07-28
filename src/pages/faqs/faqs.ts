@@ -22,4 +22,8 @@ export class FaqsPage {
     console.log('ionViewDidLoad FaqsPage');
   }
 
+  selectChange(e) {
+    console.log(e);
+  }
+
 }

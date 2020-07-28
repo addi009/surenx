@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
  * Generated class for the DetailMarketPage page.
  *
@@ -24,6 +24,10 @@ export class DetailMarketPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailMarketPage');
+  }
+
+  goToHomePage(){
+    this.navCtrl.push(HomePage);
   }
 
 }
